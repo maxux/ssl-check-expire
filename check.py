@@ -34,7 +34,9 @@ if __name__ == '__main__':
         "irc.maxux.net",
         "ssh.maxux.net",
         "www.maxux.net",
-        "www.cbseraing.be"
+        "frites.maxux.net",
+        "www.cbseraing.be",
+        "www.lapersonnelaplusrichedinternet.eu"
     ]
 
     services = [
