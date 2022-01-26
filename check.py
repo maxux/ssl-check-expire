@@ -36,7 +36,9 @@ if __name__ == '__main__':
         "www.maxux.net",
         "frites.maxux.net",
         "www.cbseraing.be",
-        "www.lapersonnelaplusrichedinternet.eu"
+        "www.lapersonnelaplusrichedinternet.eu",
+        "www.magickey.be",
+        "msgur.maxux.net",
     ]
 
     services = [
@@ -46,10 +48,10 @@ if __name__ == '__main__':
     print("== Websites ==")
     for website in websites:
         site = SSLExpireCheck(website)
-        print("%-20s: %s" % (website, site.expiration()))
+        print("%-20s: %s" % (website[0:20], site.expiration()))
 
     print("")
     print("== Services ==")
     for service in services:
         remote = SSLExpireCheck(service[0], service[1])
-        print("%-20s: %s" % (("%s [%s]" % (service[0], service[1]), site.expiration())))
+        print("%-20s: %s" % (("%s [%s]" % (service[0][0:20], service[1]), site.expiration())))
